@@ -1,0 +1,94 @@
+:root {
+  --gray-primary: #afaeaf;
+  --gray-secondary: #f2f2f2;
+  --red-primary: #e01d1f;
+  --red-secondary: #fe9698;
+  --blue-primary: #253fd6;
+  --blue-secondary: #7789ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--gray-secondary);
+  font-family: -apple-system, "Helvetica Neue", sans-serif;
+}
+
+.scoreboard {
+  display: flex;
+  padding: 0.25rem;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.competitor {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.competitor h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  background-color: var(--gray-primary);
+}
+
+#red-add,
+#blue-add {
+  width: 100%;
+  padding: 1rem 0;
+  border: none;
+  color: white;
+  font-size: 8rem;
+  font-weight: bold;
+}
+
+#red-add {
+  background-color: var(--red-primary);
+}
+
+#blue-add {
+  background-color: var(--blue-primary);
+}
+
+.secondary-actions {
+  display: flex;
+  padding: 0.25rem;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+}
+
+.secondary-actions button {
+  width: 100%;
+  flex-grow: 1;
+  padding: 1.5rem 0;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#red-warning {
+  background-color: var(--red-secondary);
+}
+
+#red-minus {
+  background-color: var(--red-secondary);
+}
+
+#reset {
+  background-color: var(--gray-primary);
+}
+
+#blue-warning {
+  background-color: var(--blue-secondary);
+}
+
+#blue-minus {
+  background-color: var(--blue-secondary);
+}

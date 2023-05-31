@@ -85,10 +85,10 @@ body {
   background-color: var(--gray-primary);
 }
 
-#blue-warning {
+#blue-minus {
   background-color: var(--blue-secondary);
 }
 
-#blue-minus {
+#blue-warning {
   background-color: var(--blue-secondary);
 }

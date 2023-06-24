@@ -32,11 +32,11 @@ function handleTouchMove(event) {
     if (xDiff > 0) {
       // Swiped left
       document.getElementById('swipeScreen').style.backgroundColor = '#f44141';
-      addPoint('blue');
+      addPoint('red');
     } else {
       // Swiped right
       document.getElementById('swipeScreen').style.backgroundColor = '#4286f4';
-      addPoint('red');
+      addPoint('blue');
     }
   }
 

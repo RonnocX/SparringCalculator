@@ -32,11 +32,11 @@ function handleTouchMove(event) {
     if (xDiff > 0) {
       // Swiped left
       document.getElementById('swipeScreen').style.backgroundColor = '#f44141';
-      addPoint('blue'); // Update color to blue here
+      addPoint('blue');
     } else {
       // Swiped right
       document.getElementById('swipeScreen').style.backgroundColor = '#4286f4';
-      addPoint('red'); // Update color to red here
+      addPoint('red');
     }
   }
 
@@ -86,3 +86,31 @@ function resetScores() {
   document.getElementById('redScore').getElementsByTagName('p')[0].textContent = redScore;
   document.getElementById('swipeScreen').style.backgroundColor = '#4286f4';
 }
+
+function handleWarning(color) {
+  addWarning(color);
+}
+
+function handleMinusPoint(color) {
+  deductPoint(color);
+}
+
+document.getElementById('blueWarningBtn').addEventListener('click', function () {
+  handleWarning('blue');
+});
+
+document.getElementById('redWarningBtn').addEventListener('click', function () {
+  handleWarning('red');
+});
+
+document.getElementById('blueMinusBtn').addEventListener('click', function () {
+  handleMinusPoint('blue');
+});
+
+document.getElementById('redMinusBtn').addEventListener('click', function () {
+  handleMinusPoint('red');
+});
+
+document.getElementById('resetBtn').addEventListener('click', function () {
+  resetScores();
+});

@@ -1,29 +1,33 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Scoreboard</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-  </head>
+<head>
+    <title>Taekwondo Point Keeper</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="pointKeeper">
+        <h1>Taekwondo Point Keeper</h1>
+        <div class="scoreboard">
+            <div id="blueScore" class="score">
+                <h2>Blue Score</h2>
+                <p>0</p>
+            </div>
+            <div id="redScore" class="score">
+                <h2>Red Score</h2>
+                <p>0</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="bluePointBtn" class="pointBtn" onclick="addPoint('blue')">Blue Point</button>
+            <button id="redPointBtn" class="pointBtn" onclick="addPoint('red')">Red Point</button>
+            <button id="blueWarningBtn" class="warningBtn" onclick="addWarning('blue')">Blue Warning</button>
+            <button id="redWarningBtn" class="warningBtn" onclick="addWarning('red')">Red Warning</button>
+            <button id="blueMinusBtn" class="minusPointBtn" onclick="deductPoint('blue')">Blue Minus</button>
+            <button id="redMinusBtn" class="minusPointBtn" onclick="deductPoint('red')">Red Minus</button>
+            <button id="resetBtn" class="resetBtn" onclick="resetScores()">Reset</button>
+        </div>
+    </div>
 
-  <body>
-    <section class="scoreboard">
-      <div class="competitor">
-        <h2 id="red-count">0</h2>
-        <button id="red-add">+1</button>
-      </div>
-
-      <div class="competitor">
-        <h2 id="blue-count">0</h2>
-        <button id="blue-add">+1</button>
-      </div>
-    </section>
-
-    <section class="secondary-actions">
-      <button id="red-warning">WARNING</button>
-      <button id="red-minus">-1</button>
-      <button id="reset">RESET</button>
-      <button id="blue-minus">-1</button>
-      <button id="blue-warning">WARNING</button>
-    </section>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>

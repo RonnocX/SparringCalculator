@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.score {
+    margin: 0 20px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.pointBtn, .warningBtn, .minusPointBtn, .resetBtn {
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+#blueScore {
+    background-color: #4286f4;
+    color: #fff;
+}
+
+#redScore {
+    background-color: #f44141;
+    color: #fff;
+}

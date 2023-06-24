@@ -31,30 +31,76 @@ h1 {
     border-radius: 5px;
 }
 
+/* Styles for the buttons */
 .buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
-.actionBtn {
-    margin: 10px;
-    padding: 10px 20px;
-    font-size: 14px;
-    border-radius: 5px;
-    border: none;
-    color: #fff;
-    background-color: #4286f4;
+.warningBtn,
+.minusBtn {
+  background-color: transparent;
+  color: #333;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
 }
 
-.resetBtn {
-    background-color: #f44141;
+.warningBtn:hover,
+.minusBtn:hover {
+  background-color: #f1f1f1;
+}
+
+.warningBtn:focus,
+.minusBtn:focus {
+  box-shadow: 0 0 0 2px #4286f4;
+}
+
+.warningBtn:active,
+.minusBtn:active {
+  background-color: #ddd;
+}
+
+/* Additional styles for bigger buttons */
+.warningBtn,
+.minusBtn {
+  font-size: 18px;
+  padding: 12px 20px;
 }
 
 .warningBtn {
-    background-color: #ffaf00;
+  color: #f44141;
 }
 
 .minusBtn {
-    background-color: #6c757d;
+  color: #4286f4;
+}
+
+.resetBtn {
+  background-color: #f1f1f1;
+  color: #333;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 16px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.resetBtn:hover {
+  background-color: #ddd;
+}
+
+.resetBtn:focus {
+  box-shadow: 0 0 0 2px #4286f4;
+}
+
+.resetBtn:active {
+  background-color: #ccc;
 }

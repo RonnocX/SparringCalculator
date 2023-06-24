@@ -8,22 +8,22 @@
     <div id="pointKeeper">
         <h1>Taekwondo Point Keeper</h1>
         <div class="scoreboard">
-            <div id="blueScore" class="score">
-                <h2>Blue Score</h2>
-                <p>0</p>
-            </div>
             <div id="redScore" class="score">
                 <h2>Red Score</h2>
                 <p>0</p>
             </div>
+            <div id="blueScore" class="score">
+                <h2>Blue Score</h2>
+                <p>0</p>
+            </div>
         </div>
         <div class="buttons">
-            <button id="bluePointBtn" class="pointBtn" onclick="addPoint('blue')">Blue Point</button>
             <button id="redPointBtn" class="pointBtn" onclick="addPoint('red')">Red Point</button>
-            <button id="blueWarningBtn" class="warningBtn" onclick="addWarning('blue')">Blue Warning</button>
+            <button id="bluePointBtn" class="pointBtn" onclick="addPoint('blue')">Blue Point</button>
             <button id="redWarningBtn" class="warningBtn" onclick="addWarning('red')">Red Warning</button>
-            <button id="blueMinusBtn" class="minusPointBtn" onclick="deductPoint('blue')">Blue Minus</button>
+            <button id="blueWarningBtn" class="warningBtn" onclick="addWarning('blue')">Blue Warning</button>
             <button id="redMinusBtn" class="minusPointBtn" onclick="deductPoint('red')">Red Minus</button>
+            <button id="blueMinusBtn" class="minusPointBtn" onclick="deductPoint('blue')">Blue Minus</button>
             <button id="resetBtn" class="resetBtn" onclick="resetScores()">Reset</button>
         </div>
     </div>

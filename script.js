@@ -9,6 +9,7 @@ let warnings = {
 
 document.addEventListener('touchstart', handleTouchStart, false);
 document.addEventListener('touchmove', handleTouchMove, false);
+document.addEventListener('touchend', handleTouchEnd, false);
 
 function handleTouchStart(event) {
   const firstTouch = event.touches[0];
@@ -28,6 +29,7 @@ function handleTouchMove(event) {
   let yDiff = yDown - yUp;
 
   if (Math.abs(xDiff) > Math.abs(yDiff)) {
+    event.preventDefault(); // Prevent default horizontal scrolling
     if (xDiff > 0) {
       // Swiped left
       document.getElementById('swipeScreen').style.backgroundColor = '#f44141';
@@ -42,6 +44,11 @@ function handleTouchMove(event) {
   // Reset touch coordinates
   xDown = null;
   yDown = null;
+}
+
+function handleTouchEnd() {
+  // Enable scrolling after touch ends
+  document.removeEventListener('touchmove', handleTouchMove);
 }
 
 function addPoint(color) {
